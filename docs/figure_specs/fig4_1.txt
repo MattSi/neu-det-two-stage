@@ -1,0 +1,29 @@
+
+         Input Image
+              │
+              ▼
+  ┌───────────────────────┐
+  │ Stage 1: Faster R-CNN │
+  │ Generic Localization  │
+  └───────────────────────┘
+              │
+       Predicted BBoxes
+              │
+              ▼
+  ┌───────────────────────┐
+  │    ROI Extraction     │
+  │   + 10% Padding       │
+  └───────────────────────┘
+              │
+         ROI Images
+              │
+              ▼
+  ┌───────────────────────┐
+  │ Stage 2: ResNet50     │
+  │ 6-Class Classification│
+  └───────────────────────┘
+              │
+              ▼
+     Final Defect Results
+    (BBox + Class + Score)
+

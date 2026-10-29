@@ -1,0 +1,33 @@
+
+
+(a)Direct Detection    (b) Decoupled Framework   
+				           
+Input Image             Input Image
+     │                       │ 
+     ▼                       ▼
+Faster R-CNN            Generic Defect Detector
+     │                       │
+     ▼                       ▼
+Bounding Box            Bounding Box
+     +                       │
+Defect Category              ▼
+						ROI Extraction
+							 │
+							 ▼
+						CNN Classifier
+							 │
+							 ▼
+						Defect Category
+
+
+
+
+
+     
+     
+
+     
+     
+
+     
+     

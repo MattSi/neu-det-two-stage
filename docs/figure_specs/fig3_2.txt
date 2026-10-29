@@ -1,0 +1,20 @@
+                NEU-DET
+          1,800 annotated images
+                    │
+                    ▼
+        Train / Val / Test Split
+          1260 / 270 / 270
+                    │
+          ┌─────────┴─────────┐
+          ▼                   ▼
+      Stage 1             Stage 2
+  Localization Dataset   ROI Dataset
+          │                   │
+ Six classes → one      Crop defect ROIs
+ generic "defect"        using bounding boxes
+          │                   │
+          ▼                   ▼
+   Faster R-CNN          Six-class CNN
+   Defect Detector        Classifier
+   
+   

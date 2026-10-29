@@ -1,0 +1,78 @@
+# ============================================================
+# Python
+# ============================================================
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments and local environment variables
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# ============================================================
+# Dataset
+# Keep data/splits/ and small metadata files under version control.
+# ============================================================
+data/raw/
+data/processed/
+data/archives/
+
+# ============================================================
+# Raw experiment runs
+# Contains intermediate checkpoints, logs, evaluator outputs,
+# and full predictions. Curated summaries belong in results/.
+# ============================================================
+runs/
+
+# ============================================================
+# Model weights
+# Keep manifests and documentation in models/, but not binaries.
+# ============================================================
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.safetensors
+last_checkpoint
+
+# ============================================================
+# Large/reproducible result artifacts
+# Keep summary JSON, CSV, and final figures outside these folders.
+# ============================================================
+results/logs/
+results/predictions/
+events.out.tfevents.*
+**/instances_predictions.pth
+
+# ============================================================
+# Notebooks and generated caches
+# ============================================================
+.ipynb_checkpoints/
+
+# ============================================================
+# Document temporary files
+# Keep paper drafts out of this repository.
+docs/paper/
+# ============================================================
+~$*.docx
+*.tmp
+*.temp
+
+# ============================================================
+# Editors and operating systems
+# ============================================================
+.idea/
+.vscode/
+tmp/
+.DS_Store
+Thumbs.db
+Desktop.ini
+

@@ -1,0 +1,66 @@
+{
+  "split": "test",
+  "annotation_json": "data/processed/stage1/annotations/test.json",
+  "stage1_model": "runs/training/stage1_faster_rcnn_r50_fpn/model_0002249.pth",
+  "stage2_model": "runs/training/stage2_resnet50/model_best.pth",
+  "score_threshold": 0.5,
+  "match_iou_threshold": 0.5,
+  "roi_padding_ratio": 0.1,
+  "gt_boxes": 629,
+  "predicted_boxes": 1225,
+  "matched_boxes": 548,
+  "stage1_recall": 0.8712241653418124,
+  "matched_roi_accuracy": 0.9981751824817519,
+  "end_to_end_accuracy": 0.8696343402225755,
+  "classification_report": {
+    "crazing": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 79.0
+    },
+    "inclusion": {
+      "precision": 1.0,
+      "recall": 0.9924812030075187,
+      "f1-score": 0.9962264150943396,
+      "support": 133.0
+    },
+    "patches": {
+      "precision": 0.9919354838709677,
+      "recall": 1.0,
+      "f1-score": 0.9959514170040485,
+      "support": 123.0
+    },
+    "pitted_surface": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 55.0
+    },
+    "rolled-in_scale": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 84.0
+    },
+    "scratches": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 74.0
+    },
+    "accuracy": 0.9981751824817519,
+    "macro avg": {
+      "precision": 0.9986559139784946,
+      "recall": 0.9987468671679198,
+      "f1-score": 0.9986963053497314,
+      "support": 548.0
+    },
+    "weighted avg": {
+      "precision": 0.9981898987520602,
+      "recall": 0.9981751824817519,
+      "f1-score": 0.9981754333924182,
+      "support": 548.0
+    }
+  }
+}

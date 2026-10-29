@@ -1,0 +1,10 @@
+# Install PyTorch, torchvision, and Detectron2 first (see README):
+#   torch, torchvision  -> https://pytorch.org/get-started/locally/
+#   detectron2          -> https://detectron2.readthedocs.io/en/latest/tutorials/install.html
+numpy
+pandas
+scikit-learn
+matplotlib
+opencv-python
+Pillow
+pycocotools

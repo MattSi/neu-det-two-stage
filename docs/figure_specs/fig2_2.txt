@@ -1,0 +1,23 @@
+Input Image
+     │
+     ▼
+CNN Backbone
+     │
+     ▼
+Feature Maps
+     │
+     ▼
+Region Proposal Network
+     │
+     ▼
+Candidate Regions
+     │
+     ▼
+   ROI Align
+     │
+     ▼
+ Detection Head
+   /   \
+  ▼     ▼
+Class  Bounding Box
+
