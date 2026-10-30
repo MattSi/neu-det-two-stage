@@ -62,7 +62,9 @@ EVALUATION_SPLIT = "val"
 
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
-STAGE1_SCORE_THRESHOLD = 0.50
+# Operating threshold chosen on validation by validate_threshold_sweep.py
+# (highest F1). The reported test results use this value.
+STAGE1_SCORE_THRESHOLD = 0.84
 
 # A predicted box is treated as matching a GT box
 # if IoU >= this threshold.

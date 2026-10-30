@@ -1,0 +1,8 @@
+true \ predicted,crazing,inclusion,patches,pitted_surface,rolled-in_scale,scratches,missed
+crazing,43,0,0,0,0,0,56
+inclusion,0,111,2,1,0,0,36
+patches,0,0,115,0,0,0,13
+pitted_surface,0,0,0,50,0,0,14
+rolled-in_scale,0,0,0,0,59,0,43
+scratches,0,0,0,0,0,69,7
+background,39,45,29,5,45,20,0
